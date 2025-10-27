@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard - ZeW-IT</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="header" style="position:relative;">
+    ZeW-IT Waste Management Platform
+    <button class="nav-toggle" onclick="toggleNavMenu()">☰</button>
+  </div>
+  <nav>
+    <div class="nav-menu" id="navMenu">
+      <a href="index.html">Login/Register</a>
+      <a href="admin.html">Admin Dashboard</a>
+      <a href="user.html">User Dashboard</a>
+      <a href="eco-points.html">Eco-Points</a>
+      <a href="about-contact.html">About & Contact</a>
+    </div>
+  </nav>
+  <div class="container dashboard">
+    <div class="dashboard-section">
+      <h3>Registered Users</h3>
+      <ul>
+        <li>User1 (Domestic)</li>
+        <li>User2 (Commercial)</li>
+      </ul>
+    </div>
+    <div class="dashboard-section">
+      <h3>Waste Logging Stats</h3>
+      <p>Total Waste Today: <b>425 kg</b></p>
+      <p>Properly Segregated: <b>390 kg</b></p>
+    </div>
+    <div class="dashboard-section">
+      <h3>Sponsor Activity</h3>
+      <p>Sponsors Joined: <b>6</b></p>
+      <p>Last Funding: <b>₹20,000</b></p>
+    </div>
+    <div class="dashboard-section">
+      <h3>Manage Users & Waste</h3>
+      <button onclick="alert('Feature under construction')">Edit/Delete Users</button>
+      <button onclick="window.location.href='eco-points.html'">Eco-Points Transactions</button>
+    </div>
+  </div>
+  <script src="assets/script.js"></script>
+</body>
+</html>

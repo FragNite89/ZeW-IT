@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Eco-Points Transactions - ZeW-IT</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="header" style="position:relative;">
+    ZeW-IT Waste Management Platform
+    <button class="nav-toggle" onclick="toggleNavMenu()">☰</button>
+  </div>
+  <nav>
+    <div class="nav-menu" id="navMenu">
+      <a href="index.html">Login/Register</a>
+      <a href="admin.html">Admin Dashboard</a>
+      <a href="user.html">User Dashboard</a>
+      <a href="eco-points.html">Eco-Points</a>
+      <a href="about-contact.html">About & Contact</a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="card">
+      <h3>Eco-Points Balance: <span id="eco-balance">150</span></h3>
+    </div>
+    <div class="flex-row">
+      <div style="flex:1;">
+        <label>Add Eco-Points</label>
+        <input type="number" id="eco-points-input" min="0" />
+        <button onclick="addEcoPoints()">Add</button>
+      </div>
+      <div style="flex:1;">
+        <label>Redeem Eco-Points</label>
+        <input type="number" id="redeem-points-input" min="0" />
+        <button onclick="redeemEcoPoints()">Redeem</button>
+      </div>
+    </div>
+    <div class="card">
+      <h4>Transaction History (Demo)</h4>
+      <ul>
+        <li>+50 Eco-Points for waste logging</li>
+        <li>-20 Eco-Points redeemed (Bag Discount)</li>
+      </ul>
+    </div>
+    <button onclick="window.location.href='user.html'">Back to Dashboard</button>
+  </div>
+  <script src="assets/script.js"></script>
+</body>
+</html>

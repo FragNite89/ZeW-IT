@@ -1,0 +1,9 @@
+/zewit/
+  index.html            (Login/Registration page)
+  admin.html            (Admin dashboard)
+  user.html             (User dashboard)
+  eco-points.html       (Eco-Points transaction page)
+  about-contact.html    (About Us & Contact Us)
+  assets/
+    style.css           (Common stylesheet)
+    script.js           (Common JavaScript)

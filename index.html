@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ZeW-IT - Login/Register</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <!-- Universal Navbar -->
+  <div class="header" style="position:relative;">
+    ZeW-IT Waste Management Platform
+    <button class="nav-toggle" onclick="toggleNavMenu()">☰</button>
+  </div>
+  <nav>
+    <div class="nav-menu" id="navMenu">
+      <a href="index.html">Login/Register</a>
+      <a href="admin.html">Admin Dashboard</a>
+      <a href="user.html">User Dashboard</a>
+      <a href="eco-points.html">Eco-Points</a>
+      <a href="about-contact.html">About & Contact</a>
+    </div>
+  </nav>
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Login / Registration</h2>
+    <form onsubmit="loginUser(event)">
+      <label for="username">Username or Email</label>
+      <input type="text" id="username" required />
+      <label for="password">Password</label>
+      <input type="password" id="password" required />
+      <label for="usertype">I am a</label>
+      <select id="usertype">
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select>
+      <button type="submit">Login / Register</button>
+    </form>
+  </div>
+  <script src="assets/script.js"></script>
+</body>
+</html>

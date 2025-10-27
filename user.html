@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Dashboard - ZeW-IT</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="header" style="position:relative;">
+    ZeW-IT Waste Management Platform
+    <button class="nav-toggle" onclick="toggleNavMenu()">☰</button>
+  </div>
+  <nav>
+    <div class="nav-menu" id="navMenu">
+      <a href="index.html">Login/Register</a>
+      <a href="admin.html">Admin Dashboard</a>
+      <a href="user.html">User Dashboard</a>
+      <a href="eco-points.html">Eco-Points</a>
+      <a href="about-contact.html">About & Contact</a>
+    </div>
+  </nav>
+  <div class="container dashboard">
+    <div class="dashboard-section">
+      <h3>Waste Logging</h3>
+      <form>
+        <label for="waste-type">Type</label>
+        <select id="waste-type">
+          <option>Organic</option>
+          <option>Plastic</option>
+          <option>Metal</option>
+          <option>Electronic</option>
+        </select>
+        <label for="waste-amount">Amount (kg)</label>
+        <input type="number" id="waste-amount" min="0" />
+        <button type="button" onclick="alert('Logged. QR authentication pending.')">Log Waste</button>
+      </form>
+    </div>
+    <div class="dashboard-section">
+      <h3>My Eco-Points</h3>
+      <p>Balance: <span id="eco-balance">150</span></p>
+      <button onclick="window.location.href='eco-points.html'">View Transactions</button>
+    </div>
+    <div class="dashboard-section">
+      <h3>Marketplace</h3>
+      <ul>
+        <li>Recycled Shopping Bag - <b>Discount: ₹30</b></li>
+        <li>Eco-Friendly Bottle - <b>Discount: ₹55</b></li>
+      </ul>
+      <button onclick="alert('Marketplace feature coming soon!')">View More</button>
+    </div>
+  </div>
+  <script src="assets/script.js"></script>
+</body>
+</html>
